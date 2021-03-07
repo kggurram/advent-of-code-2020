@@ -1,5 +1,5 @@
 
-f = open('E:\Programming\Projects\Advent of Code\Day 1 - Report Repair\inputs.txt', 'r')
+f = open('D:\Projects\GitHub\Advent of Code 2020\Day 1 - Report Repair\inputs.txt', 'r')
 nums = []
 entries = []
 ans = 0;
