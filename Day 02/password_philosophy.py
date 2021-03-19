@@ -1,5 +1,3 @@
-import numpy as np
-
 f = open('D:\Projects\GitHub\Advent of Code 2020\Day 2 - Password Philosophy\inputs.txt', 'r') # open given input file
 inputs = [] # initialized array for given inputs
 nums = [] # initialized array for the given numbers (subsection from inputs)
@@ -7,7 +5,6 @@ letters = [] # initialized array for the result of modifiying init_letters[]
 pw = [] # initialized array for the given passwords (subsection from inputs)
 valid_pw = [] # final array for valid password elements
 init_letters = [] # initialized array for first iteration of letter array (to be used to create the neater, better letters[])
-test = []
 
 # for each line in inputs file, split into inputs[]
 for line in f.readlines():
@@ -30,14 +27,10 @@ for i in range(len(init_letters)):
 # checks for valid passwords
 def valid():
     # for each password
-    for i in range(len(pw)):
-        # if the given letter is in the relating password
-        if(letters[i] in pw[i]):
-            # if the position of the letter in the password matches with either of the 2 given numbers for that password
-            if(((pw[i].index(letters[i]) + 1) == nums[i][0]) or ((pw[i].index(letters[i]) + 1) == nums[i][1])):
-                valid_pw.append(pw[i]) # add that password to valid_pw[]
+    for i in range(len(nums)):
+        # if the number of times the given letter is in the password is between the 2 given values for that password
+        if(pw[i].count(letters[i][0]) >= int(nums[i][0]) and pw[i].count(letters[i][0]) <= int(nums[i][1])):
+            valid_pw.append(pw[i]) # add that password to valid_pw[] because it is valid according to the conditions
 
 valid() # run to check for valid password and update valid_pw[]
 print(len(valid_pw)) # print length of valid_pw denoting the number of valid passwords
-print(valid_pw)
-# print(nums)
