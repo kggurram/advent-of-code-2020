@@ -35,7 +35,7 @@ Summaries & Code
 | Day 24    | [x][d24r]   | [x][d24g] |
 | Day 25    | [x][d25r]   | [x][d25g] |
 
-[d01g]: https://github.com/kggurram/advent-of-code-2020/blob/main/Day%201%20-%20Report%20Repair/report_repair.py
+[d01g]: https://github.com/kggurram/advent-of-code-2020/blob/main/Day 01/report_repair.py
 [d01r]: https://github.com/kggurram/advent-of-code-2020/blob/master/reflections.md#day-1
 [d02g]: https://github.com/kggurram/advent-of-code-2020/blob/master/src/AOC/Challenge/Day02.hs
 [d02r]: https://github.com/kggurram/advent-of-code-2020/blob/master/reflections.md#day-2
